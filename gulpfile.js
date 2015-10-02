@@ -30,7 +30,10 @@ var webpackConfig = {
       { test: /\.woff2$/, loader: "url-loader?prefix=font/&limit=5000&mimetype=application/font-woff2" },
       { test: /\.ttf$/, loader: "file-loader?prefix=font/" },
       { test: /\.eot$/, loader: "file-loader?prefix=font/" },
-      { test: /\.svg$/, loader: "file-loader?prefix=font/" }
+      { test: /\.svg$/, loader: "file-loader?prefix=font/" },
+      { test: /\.gif$/, loader: "url-loader" },
+      // This next one is to fix https://github.com/desandro/masonry/issues/679
+      { test: /masonry-layout/, loader: 'imports?define=>false&this=>window' }
     ]
   },
   plugins: [
