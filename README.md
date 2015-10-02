@@ -11,7 +11,7 @@ Design choices:
 * Masonry takes care of the fluid/responsive layout.
 
 I tried using [lazyload](http://www.appelsiini.net/projects/lazyload) to make the page load faster, but it ended up
-not playing nicely with Masonry.
+not playing nicely with Masonry. Also, the images load much slower in Safari than in Chrome, but I didn't have a chance to debug this.
 
 # Building
 These commands will start a local webserver at [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/) with automatic refresh.
