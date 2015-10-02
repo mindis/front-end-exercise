@@ -1,5 +1,6 @@
 # front-end-exercise
-[View a live demo here.](http://afader.github.io/front-end-exercise/)
+[View a live demo here.](http://afader.github.io/front-end-exercise/) Try resizing your browser window to test the
+responsive layout.
 
 This app fetches and renders some mock data from [an endpoint](/app/js/config.js). The images are rendered into a fluid
 layout using [Masonry](http://masonry.desandro.com/).
