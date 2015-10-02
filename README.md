@@ -6,9 +6,9 @@ This app fetches and renders some mock data from [an endpoint](/app/js/config.js
 layout using [Masonry](http://masonry.desandro.com/).
 
 ## Design Choices:
-* Dispaly all of the image in a single page.
+* Display all of the image in a single page.
 * Scale images down to a maximum width.
-* Masonry takes care of the fluid/responsive layout.
+* Masonry takes care of the fluid/responsive layout, since the images have varying heights.
 
 I tried using [lazyload](http://www.appelsiini.net/projects/lazyload) to make the page load faster, but it ended up
 not playing nicely with Masonry. Also, the images load much slower in Safari than in Chrome, but I didn't have a chance to debug this.
